@@ -11,7 +11,7 @@ const forecast = (latitide,longitude,callback) => {
             callback('Invalid longitude or latitude property',undefined)
         }else{
             callback(undefined,{
-                forecast: 'The current temperatue is '+ body.main.temp + ' and it feels like '+ body.main.feels_like
+                forecast: 'The current temperatue is '+ body.main.temp + ' and it feels like '+ body.main.feels_like +'.\nHumidiy: ' + body.main.humidity +'%'
             })
         }
         
